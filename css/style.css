@@ -1,0 +1,835 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+main{
+    background: #fff8e1;
+}
+
+.contenedor{
+    width: 90%;
+    max-width: 1200px;
+    margin:auto;
+    padding: 60px 0;
+}
+
+/*======== HEAD AND NAV ========*/
+
+.menu__navegacion{
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.link__menu{
+    text-decoration: none;
+    margin-left: 15px;
+    font-weight: 500;
+}
+
+.link__menu:hover{
+    color:#2ECC71;
+}
+
+.banner{
+    height: 75vh;
+    background-image: url(../img/familia_banner.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-color: white;
+    padding: 20px 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.contenido__banner{
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items:flex-start;
+    height: 80%;
+
+}
+
+.titulo__banner{
+    font-size: 69px;
+    color:#53231a;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+}
+
+.subtitulo__banner{
+    font-size: 25px;
+    color: #53231a;
+    width: 30%;
+    margin-bottom: 25px;
+    background-color: rgba(255, 248, 225, 0.8); 
+    padding: 15px;
+    border-radius: 5px;
+    display: inline-block;
+}
+
+.btn__page{
+   height: 50px;
+   padding: 1rem;
+   background: #c85f1b;
+   color: beige;
+   border: none;
+   border-radius: 5px;
+   font-weight: 600;
+   cursor: pointer;
+   transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+.btn__page:hover{
+    background: #a52f1e;
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3);
+}
+
+.services1{
+    background: #c88417;
+}
+
+
+.cont__services{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.image__service{
+    width: 40%
+}
+
+
+
+.img__service{
+    width: 100%;
+    border-radius: 5px;
+}
+
+
+
+.welcome__service{
+    width: 40%;
+}
+
+.titulo__service{
+    font-size: 35px;
+    color: beige;
+}
+
+.subtitulo__service{
+    color: beige;
+    font-style: italic;
+    margin-bottom: 15px;
+}
+
+.contendo__service{
+    color: beige;
+    margin-bottom: 15px;
+}
+
+.btn__servicios{
+    height: 40px;
+    width: 150px;
+    border: none;
+    border-radius: 5px;
+    background: beige;
+    color: black;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+.btn__servicios:hover{
+    background: #c85f1b;
+    color: beige;
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3);
+}
+
+
+/*====== section Products =========*/
+
+.productos__merme{
+    background: beige;
+}
+
+.titulo__product{
+    text-align: center;
+    padding: 1rem;
+    font-weight: 400;
+}
+
+.subtitulo__product{
+    text-align: center;
+    font-size: 40px;
+    font-weight: 600;
+}
+
+.cont__products{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    
+}
+
+
+.productos__mermes{
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: white;
+    padding: 1rem;
+    border-radius: 5px;
+
+}
+
+.img__productos{
+    width:50%;
+}
+
+.contenido__mermes{
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.titulo__mermes{
+    margin-bottom: 15px;
+}
+
+.btn__mermeslades{
+    height: 45px;
+    width: 150px;
+    border: none;
+    background: #2ECC71;
+    color: beige;
+    font-weight: 600;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn__browser{
+    text-align: center;
+    height: 55px;
+    width: 200px;
+    border: none;
+    border-radius: 5px;
+    background: purple;
+    color: beige;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+
+.btn__browser1{
+    width: 920%;
+    max-width: 1200px;
+    height: 200px;
+    margin:auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/*====== Clientes =======*/
+
+.clientes{
+    background: purple;
+}
+
+.titulo__cliente{
+    text-align: center;
+    font-size: 45px;
+    color: beige;
+    font-weight: 600;
+    letter-spacing: 3px;
+    padding: 2rem;
+}
+
+
+.cont_client{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.cards__clientes{
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.img__clientes{
+    width: 150px;
+    height: 150px;
+    border-radius: 100%;
+    border: 6px solid beige;
+}
+
+.contenido__cliente{
+    text-align: center;
+    color: beige;
+    font-size: 15px;
+    margin-top: 20px;
+}
+
+.nombre__cliente{
+    text-align: center;
+    color: beige;
+    margin-top: 20px;
+    font-style: oblique;
+}
+
+
+/*====== adventages product =======*/
+
+.tiutlo__adventage{
+    text-align: center;
+    font-size: 45px;
+}
+
+.subtitulo__adventage{
+    text-align: center;
+}
+
+.img__adventage{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+    
+}
+
+.img__ventaja{
+    width: 50%;
+    border-radius: 5px;
+}
+
+.container__adventages{
+    display: flex;
+    flex-direction: column;
+}
+
+
+.info__adventage{
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.img__info{
+    width: 40%;
+}
+
+.card__info{
+    width: 40%;
+    background: #c88417; 
+    padding: 2rem;
+}
+
+.titulo__info{
+    color: beige;
+    text-align: center;
+    font-size: 35px;
+    margin-bottom: 15px;
+}
+
+.contenido__info{
+    color: beige;
+    font-size: 20px;
+    font-weight: 300;
+}
+
+.btn__info{
+    height: 50px;
+    width: 150px;
+    font-weight: 600;
+    border: none;
+    border-radius: 5px;
+    background: beige;
+    color: black;
+    margin-top: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+.btn__info:hover{
+    background: #c85f1b;
+    color: beige;
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3);
+}
+
+/*====== visit us ========*/
+
+.contact__us{
+   height: 70vh;
+    background-image: url(../img/banme_logo.PNG);  
+    background-repeat:;
+    background-size:;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.cont{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    
+}
+.contenido__us{
+    background:beige ;
+    height: 350px;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3);
+    
+}
+
+.titulo__us{
+    font-size: 35px;
+    margin-bottom: 15px;
+    font-weight: 550;
+}
+
+.cont__us{
+    text-align: center;
+    font-size: 20px;
+    width: 70%;
+}
+
+.btn__us{
+    height: 45px;
+    width: 150px;
+    border: none;
+    background: #a52f1e;
+    color: beige;
+    font-weight: 600;
+    border-radius: 5px;
+    margin-top: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+.btn__us:hover{
+    background: #c85f1b;
+    color: beige;
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3);
+}
+
+
+
+
+hr{
+    width: 10%;
+    margin: auto;
+    height: 3px;
+    background: purple;
+    border-radius: 5px;
+    margin-top: 15px;
+    margin-bottom: 20px;
+}
+
+/*======= our team ======== */
+
+.titulo__team{
+    font-size: 45px;
+    text-align: center;
+}
+.subtitulo__team{
+    text-align: center;
+}
+
+.contenedor__team{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+   
+}
+
+.card__team{
+    width: 25%;
+    height: 350px;
+    background: beige;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+    border-radius: 5px;
+    margin-top: 30px;
+    box-shadow:
+       inset 0 -3em 3em rgba(0,0,0,0.1),
+             0 0  0 2px rgb(255,255,255),
+             0.3em 0.3em 1em rgba(0,0,0,0.3);
+    
+}
+
+.img__team{
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    border: 1px solid black;
+    margin-bottom: 15px;
+    margin-top: 15px;
+}
+
+.name__team{
+    margin-top:px;
+}
+
+/*===== subcribe =============*/
+
+.sus__purple{
+    background: #c88417;
+}
+
+
+.subcribe{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.titulo__subcribe{
+    color: beige;
+    font-size: 30px;
+    letter-spacing: 1px;
+    font-weight: 600;
+}
+
+.cont__subcribe{
+    width: 45%;
+}
+
+.form__subcribe{
+    width: 45%;
+}
+
+.subcribe__form{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border: 1px solid white;
+    height: 50px;
+}
+
+.in__subcribe{
+    border: none;
+    height: 50px;
+    width: 75%;
+    outline: none;
+    padding: 16px;
+    font-size: 15px;
+}
+
+.btn__subcribe{
+    height: 51px;
+    width: 27%;
+    border: none;
+    background: beige;
+    cursor: pointer;
+    color: black;
+    font-weight: 600;
+    font-size: 16px;
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+.btn__subcribe:hover{
+    background: #c85f1b;
+    color: beige;
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3);
+}
+
+
+/*====== form contact ========*/
+
+
+.form__contacto{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+
+.cont__formulario{
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+}
+
+.titulo__contactUs{
+    text-align: center;
+    font-size: 35px;
+    margin-bottom: 25px;
+}
+
+.subtitulo__us{
+    font-weight: 500;
+    color: #c88417;
+    text-align: center;
+}
+
+.contenido__form{
+    text-align: center;
+    font-size: 15px;
+    margin-bottom: 30px;
+   
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+}
+
+.form__contact{
+    margin-bottom: 10px;
+    height: 45px;
+    border: 1px solid #c85f1b;
+    border-radius: 5px;
+    outline: none;
+    padding: 15px;
+}
+
+textarea{
+    border: 1px solid #c85f1b;
+    border-radius: 5px;
+    outline: none;
+    margin-bottom: 45px;
+    padding: 16px;
+}
+
+.btn__form{
+    width: 50%;
+    margin: auto;
+    height: 45px;
+    border: none;
+    background: #c88417;
+    color: beige;
+    font-weight: 600;
+    letter-spacing: 1px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+.btn__form:hover{
+   background: #c85f1b;
+   color: beige;
+   box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3); 
+}
+
+.img__us{
+    width: 40%;
+    align-self: center;
+    
+}
+
+.img__contact{
+    width: 100%;
+    border-radius: 5px;
+    box-shadow:
+    inset 0 -3em 3em rgba(0,0,0,0.1),
+          0 0  0 2px rgb(255,255,255),
+          0.3em 0.3em 1em rgba(0,0,0,0.3);
+}
+
+
+
+footer{
+    background: #1C2833;
+    height: 250px;
+}
+
+.titulo__foooter{
+    text-align: center;
+    color: beige;
+    font-size: 35px;
+    letter-spacing: 1px;
+    font-weight: 300;
+    margin: auto;
+}
+
+.subtitulo{
+    text-align: center;
+    color: beige;
+    font-size: 35px;
+    letter-spacing: 1px;
+    font-weight: 300;
+}
+
+
+
+@media screen and (max-width:800px) {
+
+    .titulo__banner{
+
+    }
+
+    .subtitulo__banner{
+        width: 50%;
+    }
+    .image__service{
+        width: 70%;
+        margin-bottom: 25px;
+    }
+
+    .welcome__service{
+        width: 70%;
+    }
+
+    .productos__mermes{
+        width: 60%;
+        margin-bottom: 25px;
+    }
+
+    .img__ventaja{
+        width: 100%;
+    }
+
+    .card__info{
+        width: 100%;
+        margin-bottom: 25px;
+    }
+
+    .img__info{
+        width: 100%;
+        margin-bottom: 25px;
+    }
+
+    .contenido__us{
+        width: 80%;
+    }
+
+    .card__team{
+        width: 39%;
+    }
+
+    .cont__subcribe{
+        width: 80%;
+        margin-bottom: 25px;
+    }
+
+    .form__subcribe{
+        width: 80%;
+    }
+
+    .cont__formulario{
+        width: 80%;
+        margin-bottom: 50px;
+    }
+
+    .img__us{
+        width: 80%;
+    }
+}
+
+
+
+@media screen and (max-width:450px) {
+    .titulo__banner{
+        font-size: 60px;
+        color: purple;
+    }
+
+    .subtitulo__banner{
+        width: 89%;
+    }
+
+    .image__service{
+        width: 100%;
+        margin-bottom: 25px;
+    }
+
+    .welcome__service{
+        width: 100%;
+    }
+
+    .productos__mermes{
+        width: 100%;
+        margin-bottom: 25px;
+    }
+
+    .titulo__cliente{
+        font-size: 25px;
+    }
+
+    .cards__clientes{
+        width: 80%;
+        margin-bottom: 50px;
+    }
+
+    .tiutlo__adventage{
+        font-size: 30px;
+    }
+
+    .titulo__info{
+        font-size: 25px;
+    }
+
+    .contenido__us{
+        width: 100%;
+    }
+
+    .card__team{
+        width: 70%;
+    }
+
+    .cont__subcribe{
+        width: 100%;
+        margin-bottom: 25px;
+    }
+
+    .form__subcribe{
+        width: 100%;
+    }
+
+    .titulo__subcribe{
+        font-size: 25px;
+    }
+
+    .btn__subcribe{
+        font-size: 14px;
+        font-weight: 600;
+    }
+
+    .cont__formulario{
+        width: 100%;
+        margin-bottom: 50px;
+    }
+
+    .img__us{
+        width: 100%;
+    }
+
+    .btn__form{
+        width: 100%;
+    }
+
+
+}
