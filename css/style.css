@@ -753,13 +753,39 @@ footer{
 
 @media screen and (max-width:450px) {
     .titulo__banner{
-        font-size: 60px;
-        color: purple;
+        font-size: 45px;
+        color: ;
+    }
+
+    .btn__page{
+        width: 100%;
+    }
+
+    .btn__servicios{
+        width: 100%;
+    }
+
+    .btn__info{
+        width: 100%;
+    }
+
+    .btn__us{
+        width: 80%;
     }
 
     .subtitulo__banner{
-        width: 89%;
+        width: 100%;
     }
+
+    .titulo__team{
+        font-size: 29px;
+    }
+
+    .titulo__subcribe{
+        text-align: center;
+    }
+
+    
 
     .image__service{
         width: 100%;
@@ -794,6 +820,11 @@ footer{
 
     .contenido__us{
         width: 100%;
+    }
+
+    .titulo__us{
+        font-size: 22px;
+        margin-top: 5px;
     }
 
     .card__team{
