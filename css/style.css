@@ -9,6 +9,10 @@ body{
     font-family: 'Poppins', sans-serif;
 }
 
+:root{
+    scroll-behavior: smooth;
+}
+
 main{
     background: #fff8e1;
 }
@@ -21,6 +25,16 @@ main{
 }
 
 /*======== HEAD AND NAV ========*/
+
+.ancla{
+   text-decoration: none; 
+   color: inherit;
+}
+
+.banmed{
+    font-weight:900;
+    font-size: 30px;
+}
 
 .menu__navegacion{
     height: 50px;
@@ -42,7 +56,7 @@ main{
 
 .banner{
     height: 75vh;
-    background-image: url(../img/familia_banner.jpg);
+    background-image: linear-gradient(to top, rgba(255, 255, 255, 0.7) 0%, rgba(255, 255, 255, 0.4) 100%), url(../img/familia_banner.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
@@ -64,16 +78,16 @@ main{
 
 .titulo__banner{
     font-size: 69px;
-    color:#53231a;
+    color:#333333;
     text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
 }
 
 .subtitulo__banner{
     font-size: 25px;
-    color: #53231a;
+    color: #333333;
     width: 30%;
     margin-bottom: 25px;
-    background-color: rgba(255, 248, 225, 0.8); 
+    /*background-color: rgba(255, 248, 225, 0.8); */
     padding: 15px;
     border-radius: 5px;
     display: inline-block;
@@ -110,6 +124,46 @@ main{
 
 .image__service{
     width: 40%
+}
+
+
+/*================ VALIDACION FORMULARIO ====================*/
+
+/* Estilo para los inputs del formulario */
+/*.form__contact.input, .form__contact {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}*/
+
+/* Estilo para los mensajes de error */
+.error-message {
+    color: #e74c3c; /* rojo elegante */
+    font-size: 13PX;
+    padding-left: 5px;
+}
+
+/* Estilo para el botón */
+/*.btn__form {
+    background: linear-gradient(to right, #6a11cb, #2575fc);
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}*/
+
+/*.btn__form:hover {
+    background: linear-gradient(to right, #2575fc, #6a11cb);
+}*/
+
+/* Opcional: marcar input en rojo cuando está inválido */
+.input-error {
+    border-color: #e74c3c;
 }
 
 
@@ -304,10 +358,12 @@ main{
 .tiutlo__adventage{
     text-align: center;
     font-size: 45px;
+    color: #333333;
 }
 
 .subtitulo__adventage{
     text-align: center;
+    color: #333333;
 }
 
 .img__adventage{
@@ -366,7 +422,7 @@ main{
     border: none;
     border-radius: 5px;
     background: beige;
-    color: black;
+    color: #333333;
     margin-top: 20px;
     cursor: pointer;
     transition: background-color 0.3s, box-shadow 0.3s;
@@ -382,11 +438,11 @@ main{
 
 .contact__us{
    height: 70vh;
-    background-image: url(../img/banme_logo.PNG);  
-    background-repeat:;
-    background-size:;
-    background-position: center;
-    background-attachment: fixed;
+   background:#ffffff;  
+   background-repeat:;
+   background-size:;
+   background-position: center;
+   background-attachment: fixed;
 }
 
 .cont{
@@ -413,19 +469,21 @@ main{
     font-size: 35px;
     margin-bottom: 15px;
     font-weight: 550;
+    color: #333333;
 }
 
 .cont__us{
     text-align: center;
     font-size: 20px;
     width: 70%;
+    color: #333333;
 }
 
 .btn__us{
     height: 45px;
     width: 150px;
     border: none;
-    background: #a52f1e;
+    background: #c85f1b;
     color: beige;
     font-weight: 600;
     border-radius: 5px;
@@ -435,7 +493,7 @@ main{
 }
 
 .btn__us:hover{
-    background: #c85f1b;
+    background: #a52f1e;
     color: beige;
     box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3);
 }
@@ -491,10 +549,17 @@ hr{
 .img__team{
     width: 160px;
     height: 160px;
-    border-radius: 50%;
-    border: 1px solid black;
+    border-radius:5px;
+    border: 1px solid green;
+    background: white;
     margin-bottom: 15px;
     margin-top: 15px;
+    cursor: pointer;
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+.img__team:hover{
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3);
 }
 
 .name__team{
@@ -553,7 +618,7 @@ hr{
     border: none;
     background: beige;
     cursor: pointer;
-    color: black;
+    color: #333333;
     font-weight: 600;
     font-size: 16px;
     transition: background-color 0.3s, box-shadow 0.3s;
@@ -576,6 +641,12 @@ hr{
     justify-content: space-around;
 }
 
+.inputs{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
 
 .cont__formulario{
     display: flex;
@@ -587,6 +658,7 @@ hr{
     text-align: center;
     font-size: 35px;
     margin-bottom: 25px;
+    color: #333333;
 }
 
 .subtitulo__us{
@@ -599,6 +671,7 @@ hr{
     text-align: center;
     font-size: 15px;
     margin-bottom: 30px;
+    font: inherit;
    
 }
 
@@ -608,12 +681,15 @@ form{
 }
 
 .form__contact{
-    margin-bottom: 10px;
+    margin-bottom: 19px;
     height: 45px;
     border: 1px solid #c85f1b;
     border-radius: 5px;
     outline: none;
     padding: 15px;
+}
+
+.input{
 }
 
 textarea{
@@ -625,13 +701,14 @@ textarea{
 }
 
 .btn__form{
-    width: 50%;
+    width: 100%;
+    font-size: 19px;
     margin: auto;
-    height: 45px;
+    height: 55px;
     border: none;
     background: #c88417;
     color: beige;
-    font-weight: 600;
+    font-weight: 300;
     letter-spacing: 1px;
     border-radius: 5px;
     cursor: pointer;
@@ -752,12 +829,25 @@ footer{
 
 
 @media screen and (max-width:450px) {
+
+    .contenido__banner{
+        width: 100%;
+    }
     .titulo__banner{
-        font-size: 45px;
-        color: ;
+        font-size: 49px;
+        text-align: center;
+    }
+
+    .subtitulo__banner{
+        text-align: center;
     }
 
     .btn__page{
+        margin-top: 100px;
+        width: 100%;
+    }
+
+    .input{
         width: 100%;
     }
 

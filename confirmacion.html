@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Gracias por tu solicitud</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      text-align: center;
+      padding: 100px;
+      background: #f5f5f5;
+    }
+    .mensaje {
+      background: white;
+      display: inline-block;
+      padding: 40px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    h1 {
+      color: #2ecc71;
+    }
+  </style>
+</head>
+<body>
+  <div class="mensaje">
+    <h1>Tu requerimiento ha sido recibido con éxito</h1>
+    <p>Ya nos encontramos gestionando tu solicitud.</p>
+    <p>Te contactaremos en breve.</p>
+    <p>Serás redirigido al inicio en <span id="countdown">5</span> segundos.</p>
+  </div>
+
+  <script>
+    let counter = 5;
+    const countdown = document.getElementById('countdown');
+    const interval = setInterval(() => {
+      counter--;
+      countdown.textContent = counter;
+      if (counter === 0) {
+        clearInterval(interval);
+        window.location.href = 'index.html';
+      }
+    }, 1000);
+  </script>
+</body>
+</html>

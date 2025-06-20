@@ -16,8 +16,8 @@
         <div class="banner">
             <div class="contenedor contenido__banner">
                 <h1 class="titulo__banner">Afiliate ahora</h1>
-                <p class="subtitulo__banner">fácil, rápido y desde donde estés a Isapre Banmédica</p>
-                <button class="btn__page">COTIZAR AHORA</button>
+                <p class="subtitulo__banner">Fácil, rápido y desde donde estés a Isapre <strong class="banmed">Banmédica</strong> </p>
+                <button class="btn__page"><a href="#formulario" class="ancla">COTIZAR AHORA</a> </button>
             </div>
             
         </div>
@@ -33,7 +33,7 @@
                 <p class="subtitulo__service">Te ayudamos a encontrar el plan ideal de Banmédica de forma fácil, rápida y sin compromiso.</p>
                 <p class="contendo__service">En nuestra asesoría gratuita te explicamos paso a paso cómo elegir el plan que mejor se adapta a tus necesidades y presupuesto.</p>
                 <div class="btn__service">
-                    <button class="btn__servicios">QUIERO ASESORIA</button>
+                    <button class="btn__servicios" > <a href="#formulario" class="ancla">QUIERO ASESORIA</a> </button>
                 </div>
             </div>
         </section>
@@ -41,58 +41,42 @@
 
         
 
-        
+        <section class="contenedor" >
+            <div class="form__contacto" id="formulario">
+                <div class="cont__formulario">
+                    <h3 class="titulo__contactUs">¡Conversemos!</h3>
+                    <h2 class="subtitulo__us">¿Tienes preguntas, necesitas asesoría o quieres más información?</h2>
+                    <p class="contenido__form">Estamos aquí para ayudarte. Completa el formulario y te contactaremos lo antes posible.</p>
+                    <form id="contactForm" action="">
+                        <span id="errorNombre" class="error-message"></span>
+                        <input type="text" id="nombre" name="nombre" class="form__contact input" placeholder="NOMBRE COMPLETO">
 
-        <section class="adventages">
-            <div class="contenedor">
-                <h3 class="tiutlo__adventage">Descubre las Grandes Ventajas de Banmédica</h3>
-                <hr>
-                <p class="subtitulo__adventage">Asesoría gratuita y personalizada para cuidar tu salud y tu familia.</p>
-                <div class="container__adventages">
-                    <div class="img__adventage">
-                        <img src="img/familia_2.jpeg" alt="" class="img__ventaja">
-                    </div>
-    
-                    <div class="info__adventage">
-                        <img src="img/girl_1.jpeg" alt="" class="img__info">
-                        <div class="card__info">
-                            <h3 class="titulo__info">Mejora tu Cobertura</h3>
-                            <p class="contenido__info">Descubre los productos adicionales que tenemos para que complementes tu plan de salud y puedas obtener la mejor cobertura.</p>
-                                <button class="btn__info">SABER MÁS</button>
-                        </div>
+                        <span id="errorRut" class="error-message"></span>
+                        <input type="text" id="rut" name="rut" class="form__contact input" placeholder="RUT">
                         
-                    </div>
+                        <span id="errorRegion" class="error-message"></span>  
+                        <input type="text" id="region" name="region" class="form__contact input" placeholder="REGIÓN">
+
+                        <span id="errorComuna" class="error-message"></span>
+                        <input type="text" id="comuna" name="comuna" class="form__contact input" placeholder="COMUNA">
+
+                        <span id="errorEmail" class="error-message"></span>
+                        <input type="text" id="email" name="email" class="form__contact" placeholder="INGRESA TU E-MAIL">
+                        
+                        <span id="errorCelular" class="error-message"></span>
+                        <input type="text" id="celular" name="celular" class="form__contact" placeholder="INGRESA TU CELULAR">
+                        
+
+                        <input type="text" id="datps" name="datos" class="form__contact" placeholder="DATOS ADICIONALES ">
+                        <button type="submit" class="btn__form">Cámbiate a Isapre Banmédica</button>
+                    </form>
                 </div>
                 
-            </div>
-        </section>
+              <!--  <div class="img__us">
+                    <img src="img/mermelada__baner.jpg" alt="" class="img__contact">
+                </div>-->
 
-        <section class=" contact__us">
-            <div class="contenedor cont">
-                <div class="contenido__us">
-                    <h3 class="titulo__us">"Agenda tu Reunión Hoy"</h3>
-                    <p class="cont__us">Asesoría gratuita, rápida y personalizada en Banmédica.
-                         Nos encargamos de todo para que solo te preocupes de tu salud.</p>
-                          <button class="btn__us">COTIZA AHORA!</button>
-                </div>
-                
             </div>
-        </section>
-
-        <section class="contenedor">
-            <h3 class="titulo__team">Estamos Aquí para Ti</h3>
-            <p class="subtitulo__team">Tu tranquilidad es nuestra prioridad. Nuestro equipo te apoya en cada paso.</p>
-            <hr>
-            <div class="contenedor__team">
-                <div class="card__team">
-                    <img src="img/Jhon.PNG" alt="" class="img__team">
-                    <p class="name__team">Juan Contreras</p>
-                    <p class="name__team">Ejecutivo Banmedica</p>
-                    <p class="name__team">Celular: 996875421</p>
-                </div>
-    
-            </div>
-            
         </section>
 
         <section class="sus__purple">
@@ -111,30 +95,61 @@
             </div>
         </section>
 
-        <section class="contenedor">
-            <div class="form__contacto">
-                <div class="cont__formulario">
-                    <h3 class="titulo__contactUs">¡Conversemos!</h3>
-                    <h2 class="subtitulo__us">¿Tienes preguntas, necesitas asesoría o quieres más información?</h2>
-                    <p class="contenido__form">Estamos aquí para ayudarte. Completa el formulario y te contactaremos lo antes posible.</p>
-                    <form action="">
-                        <input type="text" class="form__contact" placeholder="Nombre y apellido">
-                        <input type="text" class="form__contact" placeholder="correo@ejemplo.com">
-                        <input type="text" class="form__contact" placeholder="Rut">
-                        <input type="text" class="form__contact" placeholder="Telefono">
-                        <input type="text" class="form__contact" placeholder="Previsión actual">
-                        <textarea name="" id="" cols="30" rows="10" placeholder="Datos adicionales"></textarea>
-                        <button class="btn__form">ENVIAR</button>
-                    </form>
+        <section class="adventages">
+            <div class="contenedor">
+                <h3 class="tiutlo__adventage">Descubre las Grandes Ventajas de Banmédica</h3>
+                <hr>
+                <p class="subtitulo__adventage">Asesoría gratuita y personalizada para cuidar tu salud y tu familia.</p>
+                <div class="container__adventages">
+                    <div class="img__adventage">
+                        <img src="img/familia_2.jpeg" alt="" class="img__ventaja">
+                    </div>
+    
+                    <div class="info__adventage">
+                        <img src="img/girl_1.jpeg" alt="" class="img__info">
+                        <div class="card__info">
+                            <h3 class="titulo__info">Mejora tu Cobertura</h3>
+                            <p class="contenido__info">Descubre los productos adicionales que tenemos para que complementes tu plan de salud y puedas obtener la mejor cobertura.</p>
+                                <button class="btn__info"> <a href="#formulario" class="ancla">SABER MÁS</a></button>
+                        </div>
+                        
+                    </div>
                 </div>
                 
-              <!--  <div class="img__us">
-                    <img src="img/mermelada__baner.jpg" alt="" class="img__contact">
-                </div>-->
-
             </div>
         </section>
 
+        <section class=" contact__us">
+            <div class="contenedor cont">
+                <div class="contenido__us">
+                    <h3 class="titulo__us">"Agenda tu Reunión Hoy"</h3>
+                    <p class="cont__us">Asesoría gratuita, rápida y personalizada en Banmédica.
+                         Nos encargamos de todo para que solo te preocupes de tu salud.</p>
+                          <button class="btn__us"><a href="#formulario" class="ancla">COTIZA AHORA!</a></button>
+                </div>
+                
+            </div>
+        </section>
+
+        <section class="contenedor">
+            <h3 class="titulo__team">Estamos Aquí para Ti</h3>
+            <p class="subtitulo__team">Tu tranquilidad es nuestra prioridad. Nuestro equipo te apoya en cada paso.</p>
+            <hr>
+            <div class="contenedor__team">
+                <div class="card__team">
+                    <img src="img/iconow.png" alt="" class="img__team">
+                    <p class="name__team">Juan Contreras</p>
+                    <p class="name__team">Ejecutivo Banmedica</p>
+                    <p class="name__team">Celular: 996875421</p>
+                </div>
+    
+            </div>
+            
+        </section>
+
+        
+
+        
         
     </main>
     <footer>
@@ -142,6 +157,6 @@
         <p class="subtitulo">2025</p>
     </footer>
 
-    
+    <script src="js/validacion.js"></script>
 </body>
 </html>
