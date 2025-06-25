@@ -26,10 +26,7 @@ main{
 
 /*======== HEAD AND NAV ========*/
 
-.ancla{
-   text-decoration: none; 
-   color: inherit;
-}
+
 
 .banmed{
     font-weight:900;
@@ -94,14 +91,19 @@ main{
 }
 
 .btn__page{
-   height: 50px;
-   padding: 1rem;
+   height: 70px;
+   width: 170px;
+   padding: 10px;
    background: #c85f1b;
    color: beige;
    border: none;
    border-radius: 5px;
    font-weight: 600;
+   text-decoration: none;
+   text-align: center;
    cursor: pointer;
+   font: inherit;
+   display: block;
    transition: background-color 0.3s, box-shadow 0.3s;
 }
 
@@ -196,14 +198,19 @@ main{
 }
 
 .btn__servicios{
-    height: 40px;
-    width: 150px;
+    height: 50px;
+    width: 170px;
     border: none;
     border-radius: 5px;
     background: beige;
     color: black;
     font-weight: 700;
     cursor: pointer;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+    padding: 11px;
+    font: inherit;
     transition: background-color 0.3s, box-shadow 0.3s;
 }
 
@@ -424,6 +431,11 @@ main{
     background: beige;
     color: #333333;
     margin-top: 20px;
+    text-decoration: none;
+    display: block;
+    font: inherit;
+    padding: 10px;
+    text-align: center;
     cursor: pointer;
     transition: background-color 0.3s, box-shadow 0.3s;
 }
@@ -489,6 +501,11 @@ main{
     border-radius: 5px;
     margin-top: 25px;
     cursor: pointer;
+    text-decoration: none;
+    text-align: center;
+    font: inherit;
+    display: block;
+    padding: 10px;
     transition: background-color 0.3s, box-shadow 0.3s;
 }
 
@@ -526,6 +543,7 @@ hr{
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-evenly;
+    margin-top: 70px;
    
 }
 
@@ -759,6 +777,79 @@ footer{
     letter-spacing: 1px;
     font-weight: 300;
 }
+
+.whatsapp-card {
+  width: 220px;
+  background: linear-gradient(to bottom, #ffffff, #f0f0e9);
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  padding: 16px;
+  text-align: center;
+  font-family: 'Segoe UI', sans-serif;
+  color: #333;
+  transition: transform 0.2s;
+}
+
+.whatsapp-card:hover {
+  transform: translateY(-4px);
+}
+
+.whatsapp-button img {
+  width: 60px;
+  height: 60px;
+  margin-bottom: 12px;
+  transition: transform 0.3s;
+}
+
+.whatsapp-button:hover img {
+  transform: scale(1.1);
+}
+
+.whatsapp-info {
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+
+/* Tooltip text */
+.tooltip-text {
+  visibility: hidden;
+  background-color: #25D366;
+  color: white;
+  text-align: center;
+  border-radius: 8px;
+  padding: 6px 12px;
+  position: absolute;
+  z-index: 1;
+  bottom: 110%; /* above icon */
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: 0;
+  font-size: 13px;
+  white-space: nowrap;
+  transition: opacity 0.3s ease;
+}
+
+/* Tooltip arrow */
+.tooltip-text::after {
+  content: "";
+  position: absolute;
+  top: 100%; /* bottom of tooltip */
+  left: 50%;
+  margin-left: -5px;
+  border-width: 6px;
+  border-style: solid;
+  border-color: #25D366 transparent transparent transparent;
+}
+
+/* Show tooltip on hover */
+.tooltip-container:hover .tooltip-text {
+  visibility: visible;
+  opacity: 1;
+}
+
+
+
 
 
 
