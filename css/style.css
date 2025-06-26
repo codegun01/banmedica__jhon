@@ -451,8 +451,6 @@ main{
 .contact__us{
    height: 70vh;
    background:#ffffff;  
-   background-repeat:;
-   background-size:;
    background-position: center;
    background-attachment: fixed;
 }
@@ -693,10 +691,10 @@ hr{
    
 }
 
-form{
+/*form{
     display: flex;
     flex-direction: column;
-}
+}*/
 
 .form__contact{
     margin-bottom: 19px;
@@ -707,8 +705,7 @@ form{
     padding: 15px;
 }
 
-.input{
-}
+
 
 textarea{
     border: 1px solid #c85f1b;
@@ -927,6 +924,78 @@ footer{
 }
 
 
+/*body {
+  background-color: #fcf5e8;
+  font-family: 'Segoe UI', sans-serif;
+}*/
+
+.form {
+  max-width: 700px;
+  margin: auto;
+  padding: 2rem;
+  background-color: #fff9ec;
+  border-radius: 12px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+}
+
+.form-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.form-group {
+  flex: 1 1 45%;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
+}
+
+.inputs, select {
+  padding: 0.75rem;
+  border: 1px solid #e1901b;
+  border-radius: 8px;
+  font-size: 1rem;
+  background-color: #fefefe;
+  transition: border-color 0.3s;
+}
+
+.inputs:focus, select:focus {
+  border-color: #d97706;
+  outline: none;
+}
+
+.error-message {
+  color: #e74c3c;
+  font-size: 0.85rem;
+  margin-bottom: 4px;
+}
+
+.btn__form {
+  width: 100%;
+  padding: 1rem;
+  background-color: #d28b0c;
+  color: white;
+  font-size: 1.1rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.btn__form:hover {
+  background-color: #b36c05;
+}
+
+@media screen and (max-width:450px) {
+  .form-row {
+    flex-direction: column;
+  }
+
+  .form-group {
+    flex: 1 1 100%;
+  }
+}
 
 
 
@@ -936,9 +1005,7 @@ footer{
 
 @media screen and (max-width:800px) {
 
-    .titulo__banner{
-
-    }
+   
 
     .subtitulo__banner{
         width: 50%;

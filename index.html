@@ -47,6 +47,7 @@
                     <h3 class="titulo__contactUs">¡Conversemos!</h3>
                     <h2 class="subtitulo__us">¿Tienes preguntas, necesitas asesoría o quieres más información?</h2>
                     <p class="contenido__form">Estamos aquí para ayudarte. Completa el formulario y te contactaremos lo antes posible.</p>
+                    <!--
                     <form id="contactForm" action="">
                         <span id="errorNombre" class="error-message"></span>
                         <input type="text" id="nombre" name="nombre" class="form__contact input" placeholder="NOMBRE COMPLETO">
@@ -66,10 +67,94 @@
                         <span id="errorCelular" class="error-message"></span>
                         <input type="text" id="celular" name="celular" class="form__contact" placeholder="INGRESA TU CELULAR">
                         
+                        <select name="" id="">
+                            <option value="">INTEGRANTES DEL PLAN</option>
+                            <option value="">Solo para mí</option>
+                            <option value="">Para mi con cargas</option>
+                            <option value="">Para 2 titulares</option>
+                            <option value="">Para 2 titulares y cargas</option>
+                        </select>
+
+                        <select name="" id="">
+                            <option value="">PREVISIÓN ACTUAL</option>
+                            <option value="">Fonasa</option>
+                            <option value="">Banmedica </option>
+                            <option value="">Consalud</option>
+                            <option value="">Vida Tres</option>
+                            <option value="">Cruz Blanca</option>
+                        </select>
 
                         <input type="text" id="datps" name="datos" class="form__contact" placeholder="DATOS ADICIONALES ">
                         <button type="submit" class="btn__form">Cámbiate a Isapre Banmédica</button>
                     </form>
+                    -->
+                    <form id="contactForm" action="" class="form">
+  <div class="form-row">
+    <div class="form-group">
+      <span id="errorNombre" class="error-message"></span>
+      <input type="text" id="nombre" name="nombre" class="inputs" placeholder="NOMBRE COMPLETO">
+    </div>
+
+    <div class="form-group">
+      <span id="errorRut" class="error-message"></span>
+      <input type="text" id="rut" name="rut" class="inputs" placeholder="RUT">
+    </div>
+  </div>
+
+  <div class="form-row">
+    <div class="form-group">
+      <span id="errorRegion" class="error-message"></span>
+      <input type="text" id="region" name="region" class="inputs" placeholder="REGIÓN">
+    </div>
+
+    <div class="form-group">
+      <span id="errorComuna" class="error-message"></span>
+      <input type="text" id="comuna" name="comuna" class="inputs" placeholder="COMUNA">
+    </div>
+  </div>
+
+  <div class="form-row">
+    <div class="form-group">
+      <span id="errorEmail" class="error-message"></span>
+      <input type="email" id="email" name="email" class="inputs" placeholder="INGRESA TU E-MAIL">
+    </div>
+
+    <div class="form-group">
+      <span id="errorCelular" class="error-message"></span>
+      <input type="tel" id="celular" name="celular" class="inputs" placeholder="INGRESA TU CELULAR">
+    </div>
+  </div>
+
+  <div class="form-row">
+    <div class="form-group">
+      <select name="integrantes" id="integrantes">
+        <option value="">INTEGRANTES DEL PLAN</option>
+        <option value="solo">Solo para mí</option>
+        <option value="con-cargas">Para mí con cargas</option>
+        <option value="dos-titulares">Para 2 titulares</option>
+        <option value="dos-titulares-cargas">Para 2 titulares y cargas</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <select name="prevision" id="prevision">
+        <option value="">PREVISIÓN ACTUAL</option>
+        <option value="fonasa">Fonasa</option>
+        <option value="banmedica">Banmédica</option>
+        <option value="consalud">Consalud</option>
+        <option value="vida-tres">Vida Tres</option>
+        <option value="cruz-blanca">Cruz Blanca</option>
+      </select>
+    </div>
+  </div>
+
+  <div class="form-group">
+    <input type="text" id="datos" name="datos" class="inputs" placeholder="DATOS ADICIONALES">
+  </div>
+
+  <button type="submit" class="btn__form">Cámbiate a Isapre Banmédica</button>
+</form>
+
                 </div>
                 
               <!--  <div class="img__us">
@@ -147,15 +232,15 @@
             <div class="contenedor__team">
              <div class="whatsapp-card">
                 <div class="tooltip-container">
-                    <a href="https://wa.me/56961907825" target="_blank" class="whatsapp-button">
+                    <a href="https://wa.me/56990317261" target="_blank" class="whatsapp-button">
                         <img src="img/iconow.png" alt="WhatsApp">
                     </a>
                     <span class="tooltip-text">Escríbeme por WhatsApp</span>
                 </div>
                 <div class="whatsapp-info">
-                <strong>Juan Contreras</strong><br>
-                    Ejecutivo Banmédica<br>
-                    Celular: +56 961907825
+                <br>
+                    Ejecutivo <strong>Banmédica</strong> <br>
+                    Celular: +56 990317261
                 </div>
             </div>
             </div>
@@ -171,7 +256,7 @@
     </footer>
 
     <div class="floating-whatsapp">
-        <a href="https://wa.me/56961907825" target="_blank" aria-label="Escríbeme por WhatsApp" class="a">
+        <a href="https://wa.me/56990317261" target="_blank" aria-label="Escríbeme por WhatsApp" class="a">
         <div class="icon-container">
             <svg viewBox="0 0 32 32" class="whatsapp-icon" xmlns="http://www.w3.org/2000/svg">
             <path fill="#25D366" d="M16.001 3C9.373 3 4 8.373 4 15c0 2.52.882 4.84 2.356 6.704L4 29l7.506-2.332A12.914 12.914 0 0 0 16 27c6.627 0 12-5.373 12-12S22.627 3 16.001 3zm0 22.997a10.962 10.962 0 0 1-5.605-1.525l-.402-.238-4.462 1.385 1.451-4.347-.261-.421A10.95 10.95 0 0 1 6.001 15c0-5.514 4.486-10 10-10s10 4.486 10 10-4.486 9.997-10 9.997z"/>
